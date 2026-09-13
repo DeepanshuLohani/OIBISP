@@ -7,13 +7,13 @@ A modern, responsive personal portfolio website built with **HTML5, CSS3, and li
 ## 🚀 How to Preview & Run
 
 1. **Directly in Browser**:
-   Open [index.html](file:///C:/Users/hp/.gemini/antigravity/scratch/portfolio/index.html) in any web browser:
+   Open [index.html](file:///C:\Users\hp\.gemini\antigravity\scratch\WebDev-Task2-PersonalPortfolio\index.html) in any web browser:
    ```
-   C:\Users\hp\.gemini\antigravity\scratch\portfolio\index.html
+   C:\Users\hp\.gemini\antigravity\scratch\WebDev-Task2-PersonalPortfolio\index.html
    ```
 2. **Local HTTP Server (Optional)**:
    ```bash
-   python -m http.server 8000 --directory "C:\Users\hp\.gemini\antigravity\scratch\portfolio"
+   python -m http.server 8000 --directory "C:\Users\hp\.gemini\antigravity\scratch\WebDev-Task2-PersonalPortfolio"
    ```
    Then open `http://localhost:8000`.
 
