@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter | Real-Time Celsius, Fahrenheit & Kelvin Tool</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-background"></div>
+
+  <main class="converter-container" role="main">
+    <!-- Header Section -->
+    <header class="converter-header">
+      <div class="logo-badge">
+        <span class="thermometer-icon">🌡️</span>
+      </div>
+      <h1 class="title">Temperature Converter</h1>
+      <p class="subtitle">Convert seamlessly between Celsius, Fahrenheit, and Kelvin with instant scientific validation</p>
+    </header>
+
+    <!-- Main Converter Card -->
+    <div class="card converter-card">
+      <!-- Input Section -->
+      <section class="form-section">
+        <div class="form-row">
+          <!-- Numeric Value Input -->
+          <div class="input-field-group">
+            <label for="tempInput" class="field-label">
+              <span>Temperature Value</span>
+              <span class="required-indicator" aria-hidden="true">*</span>
+            </label>
+            <div class="input-wrapper" id="inputWrapper">
+              <input 
+                type="text" 
+                id="tempInput" 
+                name="temperature"
+                class="temp-input" 
+                placeholder="Enter a number (e.g., 25)"
+                autocomplete="off"
+                inputmode="decimal"
+                aria-describedby="inputError absZeroWarning"
+                aria-invalid="false"
+                value="25"
+              >
+              <button type="button" id="clearBtn" class="clear-input-btn" title="Clear input" aria-label="Clear input">✕</button>
+            </div>
+          </div>
+
+          <!-- Input Unit Selector -->
+          <div class="input-field-group">
+            <label for="unitSelect" class="field-label">From Unit</label>
+            <div class="select-wrapper">
+              <select id="unitSelect" class="unit-select" aria-label="Select input temperature unit">
+                <option value="celsius" selected>Celsius (°C)</option>
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+              </select>
+              <div class="select-chevron" aria-hidden="true">▼</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Validation & Error Messaging Area -->
+        <div id="inputError" class="validation-message error-message" role="alert" aria-live="assertive" hidden>
+          <span class="msg-icon">⚠️</span>
+          <span class="msg-text" id="inputErrorText">Please enter a valid numeric temperature value.</span>
+        </div>
+
+        <!-- Absolute Zero Warning Banner -->
+        <div id="absZeroWarning" class="validation-message abs-zero-message" role="status" aria-live="polite" hidden>
+          <span class="msg-icon">❄️</span>
+          <div class="msg-body">
+            <strong>Absolute Zero Violation:</strong>
+            <span id="absZeroText">Temperature cannot drop below absolute zero (-273.15°C / -459.67°F / 0 K).</span>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons-row">
+          <button type="button" id="convertBtn" class="btn btn-primary">
+            <span class="btn-icon">⚡</span>
+            <span>Convert</span>
+          </button>
+          <button type="button" id="resetBtn" class="btn btn-secondary" title="Reset to default">
+            <span class="btn-icon">↺</span>
+            <span>Reset</span>
+          </button>
+          <button type="button" id="swapUnitBtn" class="btn btn-outline" title="Cycle through units">
+            <span class="btn-icon">⇄</span>
+            <span>Cycle Unit</span>
+          </button>
+        </div>
+
+        <!-- Quick Presets -->
+        <div class="presets-container">
+          <span class="presets-label">Common Benchmarks:</span>
+          <div class="preset-chips">
+            <button type="button" class="chip" data-val="-273.15" data-unit="celsius" title="Theoretical coldest limit">Absolute Zero</button>
+            <button type="button" class="chip" data-val="0" data-unit="celsius" title="Freezing point of pure water">Water Freezing (0°C)</button>
+            <button type="button" class="chip" data-val="21" data-unit="celsius" title="Standard room comfort">Room Temp (21°C)</button>
+            <button type="button" class="chip" data-val="37" data-unit="celsius" title="Typical human body temperature">Body Temp (37°C)</button>
+            <button type="button" class="chip" data-val="100" data-unit="celsius" title="Boiling point of pure water at 1 atm">Water Boiling (100°C)</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visual Temperature Status Gauge -->
+      <section class="gauge-section" aria-label="Temperature status scale">
+        <div class="gauge-header">
+          <span class="gauge-title">Thermal Scale</span>
+          <span class="gauge-status-badge" id="thermalStatusBadge">Pleasant / Room</span>
+        </div>
+        <div class="gauge-track">
+          <div class="gauge-fill" id="gaugeFill" style="width: 50%;"></div>
+          <div class="gauge-marker" id="gaugeMarker" style="left: 50%;"></div>
+        </div>
+        <div class="gauge-labels">
+          <span>Absolute 0</span>
+          <span>Freezing (0°C)</span>
+          <span>Room (21°C)</span>
+          <span>Boiling (100°C)</span>
+        </div>
+      </section>
+
+      <!-- Results Display Section -->
+      <section class="results-section" aria-label="Conversion results">
+        <div class="results-header">
+          <h2 class="section-title">Converted Values</h2>
+          <span class="live-indicator"><span class="pulse-dot"></span> Live updates</span>
+        </div>
+
+        <!-- All Units Simultaneously Display -->
+        <div class="results-grid">
+          <!-- Celsius Card -->
+          <article class="result-card" id="cardCelsius" data-unit="celsius">
+            <div class="card-top">
+              <span class="unit-name">Celsius</span>
+              <span class="unit-symbol">°C</span>
+            </div>
+            <div class="card-val-row">
+              <output class="card-val" id="outCelsius">25.00</output>
+              <button type="button" class="copy-btn" data-target="outCelsius" title="Copy value to clipboard" aria-label="Copy Celsius value">📋</button>
+            </div>
+            <div class="card-subtext" id="subCelsius">Input value</div>
+          </article>
+
+          <!-- Fahrenheit Card -->
+          <article class="result-card" id="cardFahrenheit" data-unit="fahrenheit">
+            <div class="card-top">
+              <span class="unit-name">Fahrenheit</span>
+              <span class="unit-symbol">°F</span>
+            </div>
+            <div class="card-val-row">
+              <output class="card-val" id="outFahrenheit">77.00</output>
+              <button type="button" class="copy-btn" data-target="outFahrenheit" title="Copy value to clipboard" aria-label="Copy Fahrenheit value">📋</button>
+            </div>
+            <div class="card-subtext" id="subFahrenheit">(25 × 9/5) + 32</div>
+          </article>
+
+          <!-- Kelvin Card -->
+          <article class="result-card" id="cardKelvin" data-unit="kelvin">
+            <div class="card-top">
+              <span class="unit-name">Kelvin</span>
+              <span class="unit-symbol">K</span>
+            </div>
+            <div class="card-val-row">
+              <output class="card-val" id="outKelvin">298.15</output>
+              <button type="button" class="copy-btn" data-target="outKelvin" title="Copy value to clipboard" aria-label="Copy Kelvin value">📋</button>
+            </div>
+            <div class="card-subtext" id="subKelvin">25 + 273.15</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Formula Breakdown Accordion/Card -->
+      <section class="formula-section">
+        <details class="formula-details" id="formulaDetails" open>
+          <summary class="formula-summary">
+            <span class="formula-summary-title">
+              <span class="summary-icon">📐</span>
+              <span>Step-by-Step Conversion Formulas</span>
+            </span>
+            <span class="accordion-arrow">▼</span>
+          </summary>
+          <div class="formula-content" id="formulaContent">
+            <!-- Dynamic content injected by script.js -->
+          </div>
+        </details>
+      </section>
+    </div>
+
+    <!-- Informational Reference Footer -->
+    <footer class="converter-footer">
+      <div class="reference-points">
+        <span class="ref-item">❄️ <strong>0 K</strong> = -273.15°C (Absolute Zero)</span>
+        <span class="ref-divider">•</span>
+        <span class="ref-item">🧊 <strong>0°C</strong> = 32°F = 273.15 K (Water Freezes)</span>
+        <span class="ref-divider">•</span>
+        <span class="ref-item">☕ <strong>100°C</strong> = 212°F = 373.15 K (Water Boils)</span>
+      </div>
+      <p class="author-note">Interactive Scientific Temperature Conversion Tool • Built with Vanilla Web Standards</p>
+    </footer>
+
+    <!-- Toast Notification for Copy -->
+    <div id="toast" class="toast" role="status" aria-live="polite">Copied to clipboard!</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
