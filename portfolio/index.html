@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio of Deepanshu Lohani — B.Tech Electronics and Communication Engineering student, Web Developer, and Programmer.">
+  <meta name="author" content="Deepanshu Lohani">
+  <title>Deepanshu Lohani | Web Developer &amp; ECE Student</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310B981'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- FIXED / STICKY NAVIGATION BAR -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-brand" aria-label="Deepanshu Lohani Homepage">
+        <span class="brand-monogram">DL</span>
+        <span class="brand-name">Deepanshu<span class="accent-text">.dev</span></span>
+      </a>
+
+      <!-- Navigation Links (At least 3 links) -->
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Nav CTA -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Get In Touch</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO / PROFILE SECTION -->
+    <section class="hero-section" id="home">
+      <div class="hero-glow-bg"></div>
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <!-- Availability Pill -->
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span class="status-text">B.Tech ECE Student &amp; Aspiring Developer</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Deepanshu Lohani</span>
+          </h1>
+
+          <h2 class="hero-role">
+            Web Developer <span class="role-separator">&amp;</span> Programmer
+          </h2>
+
+          <p class="hero-bio">
+            I am a B.Tech Electronics and Communication Engineering student passionate about web development and programming. I enjoy building responsive websites and continuously improving my coding skills with modern web technologies and C++.
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-socials">
+            <span class="social-label">Find Me:</span>
+            <!-- GitHub -->
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <!-- Email -->
+            <a href="mailto:deepanshulohani2007@gmail.com" class="social-icon-btn" aria-label="Send Email" title="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Professional Avatar Card (Placeholder Graphic) -->
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-card">
+              
+              <!-- Illustrated Avatar Photo Placeholder -->
+              <div class="avatar-frame">
+                <svg class="avatar-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Deepanshu Lohani Avatar Placeholder">
+                  <defs>
+                    <linearGradient id="avatarGlowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#10B981" stop-opacity="0.35"/>
+                      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.15"/>
+                    </linearGradient>
+                    <linearGradient id="skinToneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#FCD34D"/>
+                      <stop offset="100%" stop-color="#F59E0B"/>
+                    </linearGradient>
+                    <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#1E293B"/>
+                      <stop offset="100%" stop-color="#0F172A"/>
+                    </linearGradient>
+                  </defs>
+
+                  <circle cx="100" cy="100" r="95" fill="url(#avatarGlowGrad)" stroke="rgba(16, 185, 129, 0.4)" stroke-width="2"/>
+                  
+                  <!-- Torso -->
+                  <path d="M40 195 C40 150, 70 142, 100 142 C130 142, 160 150, 160 195 Z" fill="url(#hoodieGrad)"/>
+                  <path d="M85 145 L100 175 L115 145" stroke="#10B981" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+                  <!-- Neck & Head -->
+                  <rect x="88" y="118" width="24" height="26" rx="4" fill="url(#skinToneGrad)"/>
+                  <circle cx="100" cy="92" r="32" fill="url(#skinToneGrad)"/>
+
+                  <!-- Hair -->
+                  <path d="M68 85 C68 55, 132 55, 132 85 C132 80, 124 64, 100 64 C76 64, 68 80, 68 85 Z" fill="#1E293B"/>
+
+                  <!-- Glasses -->
+                  <rect x="76" y="85" width="20" height="14" rx="3" stroke="#10B981" stroke-width="2.5" fill="rgba(16, 185, 129, 0.1)"/>
+                  <rect x="104" y="85" width="20" height="14" rx="3" stroke="#10B981" stroke-width="2.5" fill="rgba(16, 185, 129, 0.1)"/>
+                  <line x1="96" y1="91" x2="104" y2="91" stroke="#10B981" stroke-width="2.5"/>
+
+                  <!-- Smile -->
+                  <path d="M92 108 Q100 114 108 108" stroke="#78350F" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+                  <!-- Code Icon Tag -->
+                  <rect x="74" y="152" width="52" height="22" rx="4" fill="#0A0E17" stroke="#06B6D4" stroke-width="1.5"/>
+                  <text x="100" y="167" font-size="11" font-family="'JetBrains Mono', monospace" fill="#10B981" text-anchor="middle" font-weight="bold">&lt;dev/&gt;</text>
+                </svg>
+
+                <div class="avatar-badge-status" title="Active &amp; Learning">
+                  <span class="pulse-ring"></span>
+                  <span class="status-core"></span>
+                </div>
+              </div>
+
+              <!-- Avatar Details -->
+              <div class="avatar-meta">
+                <h3 class="avatar-name">Deepanshu Lohani</h3>
+                <p class="avatar-title">B.Tech ECE Student · C++ &amp; Web Dev</p>
+                <div class="avatar-location">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Student &amp; Developer</span>
+                </div>
+              </div>
+
+              <!-- Floating Badges -->
+              <div class="floating-chip chip-left">
+                <span class="chip-icon">⚡</span>
+                <span class="chip-text">C++ &amp; Web</span>
+              </div>
+              <div class="floating-chip chip-right">
+                <span class="chip-icon">🚀</span>
+                <span class="chip-text">ECE Student</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-eyebrow">ABOUT ME</span>
+          <h2 class="section-title">Background &amp; Aspirations</h2>
+          <p class="section-desc">
+            A student driven by curiosity, foundational engineering principles, and a love for creating responsive web experiences.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio Narrative Card -->
+          <div class="about-bio-card">
+            <h3 class="about-heading">Blending Electronics &amp; Communication Engineering with Modern Web Programming</h3>
+            
+            <p class="about-paragraph">
+              I am a B.Tech Electronics and Communication Engineering student passionate about web development and programming. I enjoy building responsive websites and continuously improving my coding skills.
+            </p>
+            <p class="about-paragraph">
+              Currently, I am actively learning and applying <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>C++</strong>, and <strong>JavaScript</strong>. My background in engineering fuels my logical thinking and problem-solving, which I apply to structuring clean layouts and writing efficient algorithms.
+            </p>
+            <p class="about-paragraph">
+              I believe in learning by building practical projects—from responsive static pages to interactive tools—and mastering industry-standard tools like <strong>GitHub</strong> to collaborate and manage version control.
+            </p>
+
+            <!-- Quick Details Grid -->
+            <div class="about-quick-info">
+              <div class="info-item">
+                <span class="info-label">Name</span>
+                <span class="info-val">Deepanshu Lohani</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Education</span>
+                <span class="info-val">B.Tech in Electronics &amp; Communication (ECE)</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Current Focus</span>
+                <span class="info-val">HTML, CSS, JavaScript, C++ &amp; GitHub</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Email</span>
+                <span class="info-val">deepanshulohani2007@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlights & Stats Column -->
+          <div class="about-stats-column">
+            <div class="stat-card">
+              <div class="stat-icon-box stat-emerald">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+              <div class="stat-content">
+                <span class="stat-number">ECE Student</span>
+                <span class="stat-title">Engineering Mindset</span>
+                <p class="stat-desc">Strong foundation in analytical problem-solving and structured thinking.</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon-box stat-cyan">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="stat-content">
+                <span class="stat-number">Web &amp; C++</span>
+                <span class="stat-title">Active Learning</span>
+                <p class="stat-desc">Hands-on practice with semantic markup, CSS Grid/Flexbox, and C++ programming.</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon-box stat-violet">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div class="stat-content">
+                <span class="stat-number">100% Passion</span>
+                <span class="stat-title">Continuous Growth</span>
+                <p class="stat-desc">Dedicated to building modern, mobile-friendly websites that look polished and clean.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-eyebrow">TECHNICAL TOOLBOX</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-desc">
+            Core technologies and tools that I use for building responsive websites, writing algorithms, and managing code repositories.
+          </p>
+        </div>
+
+        <div class="skills-container">
+          
+          <!-- Primary Skills Grid -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon cat-frontend">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="category-meta">
+                <h3 class="category-name">Technical Skills</h3>
+                <span class="category-count">Languages, Frameworks &amp; Developer Tools</span>
+              </div>
+            </div>
+
+            <div class="skills-grid">
+              
+              <!-- HTML5 -->
+              <div class="skill-chip">
+                <div class="skill-chip-top">
+                  <span class="skill-icon">🌐</span>
+                  <span class="skill-tag">Markup</span>
+                </div>
+                <h4 class="skill-name">HTML5</h4>
+                <p class="skill-level">Semantic structure, modern elements &amp; web standards</p>
+              </div>
+
+              <!-- CSS3 -->
+              <div class="skill-chip">
+                <div class="skill-chip-top">
+                  <span class="skill-icon">🎨</span>
+                  <span class="skill-tag">Styling</span>
+                </div>
+                <h4 class="skill-name">CSS3</h4>
+                <p class="skill-level">Flexbox, Grid, media queries &amp; responsive layouts</p>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="skill-chip">
+                <div class="skill-chip-top">
+                  <span class="skill-icon">⚡</span>
+                  <span class="skill-tag">Web Logic</span>
+                </div>
+                <h4 class="skill-name">JavaScript</h4>
+                <p class="skill-level">DOM manipulation, event handling &amp; interactive scripts</p>
+              </div>
+
+              <!-- C++ -->
+              <div class="skill-chip">
+                <div class="skill-chip-top">
+                  <span class="skill-icon">💻</span>
+                  <span class="skill-tag">Programming</span>
+                </div>
+                <h4 class="skill-name">C++</h4>
+                <p class="skill-level">Object-Oriented Programming, data types &amp; problem solving</p>
+              </div>
+
+              <!-- GitHub -->
+              <div class="skill-chip">
+                <div class="skill-chip-top">
+                  <span class="skill-icon">🐙</span>
+                  <span class="skill-tag">Version Control</span>
+                </div>
+                <h4 class="skill-name">GitHub &amp; Git</h4>
+                <p class="skill-level">Repository management, commits, branching &amp; deployment</p>
+              </div>
+
+              <!-- Responsive Web Design -->
+              <div class="skill-chip">
+                <div class="skill-chip-top">
+                  <span class="skill-icon">📱</span>
+                  <span class="skill-tag">Design</span>
+                </div>
+                <h4 class="skill-name">Responsive Design</h4>
+                <p class="skill-level">Mobile-first design, fluid typography &amp; zero overlap</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-eyebrow">PORTFOLIO WORK</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">
+            Hands-on projects highlighting my web layout skills, logic implementation, and attention to detail.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Landing Page -->
+          <article class="project-card">
+            <div class="project-preview">
+              <div class="preview-mockup mockup-landing">
+                <div class="mockup-header-mini">
+                  <span class="mini-dot r"></span>
+                  <span class="mini-dot y"></span>
+                  <span class="mini-dot g"></span>
+                  <span class="mini-title">landing-page.preview/demo</span>
+                </div>
+                <div class="preview-visual-content landing-mock-content">
+                  <div class="mock-nav-strip">
+                    <span class="mock-logo">Brand</span>
+                    <div class="mock-links">
+                      <span class="mock-link">Features</span>
+                      <span class="mock-link">Pricing</span>
+                      <span class="mock-btn">Try Free</span>
+                    </div>
+                  </div>
+                  <div class="mock-hero-mini">
+                    <div class="mock-headline">Modern Landing Page</div>
+                    <div class="mock-subheadline">Clean typography &amp; responsive grid</div>
+                    <div class="mock-cta-pill">Get Started &rarr;</div>
+                  </div>
+                </div>
+              </div>
+              <span class="project-badge">HTML5 / CSS3</span>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta-row">
+                <h3 class="project-title">Landing Page</h3>
+              </div>
+              
+              <p class="project-desc">
+                A visually polished static landing page showcasing foundational HTML5/CSS3 layout mastery. Features a sticky navigation bar with active links, an eye-catching hero section with CTAs, bento grid features, and a fully responsive design that scales cleanly from mobile to desktop.
+              </p>
+
+              <!-- Tech Stack Tags -->
+              <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Flexbox</span>
+                <span class="tech-tag">CSS Grid</span>
+                <span class="tech-tag">Responsive Design</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub Code</span>
+                </a>
+                <a href="#home" class="btn btn-primary btn-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Live Preview</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Temperature Converter -->
+          <article class="project-card">
+            <div class="project-preview">
+              <div class="preview-mockup mockup-temp">
+                <div class="mockup-header-mini">
+                  <span class="mini-dot r"></span>
+                  <span class="mini-dot y"></span>
+                  <span class="mini-dot g"></span>
+                  <span class="mini-title">temp-converter.app/calc</span>
+                </div>
+                <div class="preview-visual-content temp-mock-content">
+                  <div class="temp-display-box">
+                    <span class="temp-val">25°C</span>
+                    <span class="temp-eq">=</span>
+                    <span class="temp-val-converted">77°F</span>
+                  </div>
+                  <div class="temp-unit-row">
+                    <span class="unit-tag active">Celsius (°C)</span>
+                    <span class="unit-tag">Fahrenheit (°F)</span>
+                    <span class="unit-tag">Kelvin (K)</span>
+                  </div>
+                </div>
+              </div>
+              <span class="project-badge badge-cyan">Interactive Web App</span>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta-row">
+                <h3 class="project-title">Temperature Converter</h3>
+              </div>
+              
+              <p class="project-desc">
+                An intuitive and responsive utility web application designed to convert temperatures seamlessly between Celsius, Fahrenheit, and Kelvin. Includes input validation, real-time calculation formulas, clean card styling, and mobile responsiveness.
+              </p>
+
+              <!-- Tech Stack Tags -->
+              <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Math Algorithms</span>
+                <span class="tech-tag">Responsive UI</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub Code</span>
+                </a>
+                <a href="#contact" class="btn btn-primary btn-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Live Preview</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-eyebrow">GET IN TOUCH</span>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-desc">
+            Feel free to reach out for project collaborations, technical discussions, or just to say hello!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Cards -->
+          <div class="contact-info-column">
+            
+            <!-- Email -->
+            <div class="contact-card">
+              <div class="contact-icon icon-emerald">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-meta">
+                <span class="contact-label">Email Address</span>
+                <a href="mailto:deepanshulohani2007@gmail.com" class="contact-value">deepanshulohani2007@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-card">
+              <div class="contact-icon icon-cyan">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div class="contact-meta">
+                <span class="contact-label">LinkedIn Profile</span>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-value">deepanshu lohsni (Deepanshu Lohani)</a>
+              </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-card">
+              <div class="contact-icon icon-violet">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <div class="contact-meta">
+                <span class="contact-label">GitHub Repository</span>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/deepanshulohani</a>
+              </div>
+            </div>
+
+            <!-- Status -->
+            <div class="contact-card">
+              <div class="contact-icon icon-amber">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </div>
+              <div class="contact-meta">
+                <span class="contact-label">Student Status</span>
+                <span class="contact-value">Open to Internships, Web Projects &amp; Learning</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Message Form -->
+          <div class="contact-form-card">
+            <h3 class="form-title">Send a Message</h3>
+            <p class="form-desc">Leave a note below and I will get back to you via email.</p>
+
+            <form class="contact-form" action="mailto:deepanshulohani2007@gmail.com" method="POST" enctype="text/plain">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="name@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="Web Development Project / Opportunity" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" rows="5" class="form-input form-textarea" placeholder="Hi Deepanshu, I came across your portfolio..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-top">
+        <a href="#home" class="nav-brand">
+          <span class="brand-monogram">DL</span>
+          <span class="brand-name">Deepanshu Lohani</span>
+        </a>
+        <p class="footer-tagline">
+          B.Tech Electronics &amp; Communication Engineering Student · Passionate Web Developer &amp; Programmer.
+        </p>
+      </div>
+
+      <div class="footer-links-row">
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="footer-social-icons">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Deepanshu on GitHub" title="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Deepanshu on LinkedIn" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="mailto:deepanshulohani2007@gmail.com" class="footer-social-btn" aria-label="Email Deepanshu" title="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 Deepanshu Lohani. Built with semantic HTML5 &amp; CSS3. All rights reserved.
+        </p>
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
