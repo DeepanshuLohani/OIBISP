@@ -12,13 +12,13 @@ You can view the page immediately in any web browser:
 
 1. **Directly**: Double-click or open `index.html` in your browser:
    ```
-   C:\Users\hp\.gemini\antigravity\scratch\landing-page\index.html
+   C:\Users\hp\.gemini\antigravity\scratch\WebDev-L1-LandingPage\index.html
    ```
 2. **Local HTTP Server** (Optional):
    ```bash
-   npx serve C:\Users\hp\.gemini\antigravity\scratch\landing-page
+   npx serve C:\Users\hp\.gemini\antigravity\scratch\WebDev-L1-LandingPage
    # or with Python:
-   cd C:\Users\hp\.gemini\antigravity\scratch\landing-page
+   cd C:\Users\hp\.gemini\antigravity\scratch\WebDev-L1-LandingPage
    python -m http.server 3000
    ```
 
